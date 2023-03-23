@@ -28,7 +28,7 @@ def main():
         with open('users.txt','a') as file:
             data = msg.value().decode('utf-8')
             file.write(''.join(data))
-            file.write(',')
+            file.write(', \n')
     c.close()
 
 if __name__ == '__main__':
