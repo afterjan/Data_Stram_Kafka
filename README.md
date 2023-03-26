@@ -15,12 +15,16 @@ Users and carts dataset [from here](https://dummyjson.com).
    pip3 install confluent-kafka
    ```
 2. Run a local Kafka Cluster with Docker <br /> 
+   <div align='justify'>
    In order to run a Kafka cluster in local, we need two things: a Kafka broker and Zookeeper. The most convenient way to set them up, is to use a Docker compose file to run multiple containers and launch everything with a single configuration script. I use the `docker-compose.yml` file stored in this GitHub repo (stored in the same directory as the Kafka producer and consumer Python files). To build both containers via CLI, use this command:
+   
    ```
    docker-compose up -d
    ```
 3. Confluent Control Center
+   <div align='justify'>
    Control Center provides a user interface that enables you to get a quick overview of cluster health, observe and control messages, topics, and Schema Registry, and to develop and run ksqlDB queries. access to the control center can be done from the port on the docker container or can go directly to http://localhost:9021/
+   </div>
    <img width="988" alt="Screenshot 2023-03-26 at 21 29 33" src="https://user-images.githubusercontent.com/113230789/227782580-cd1dcdc7-7de3-4222-8055-aa58de0864f4.png">
    <img width="1440" alt="Screenshot 2023-03-22 at 15 08 25" src="https://user-images.githubusercontent.com/113230789/227782721-aca7aa39-2987-4e6f-b3f8-0b55793d166f.png">
 4. Build a Kafka producer and consumer.
