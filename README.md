@@ -8,7 +8,7 @@ Ingest data from an API using Kafka into local computer's file system in a strea
 ## Dataset
 Users and carts dataset [from here](https://dummyjson.com).
 
-## Step
+## Steps
 ### A. Topic with no partition and only one consumer (dir: users)
 1. Install confluent kafka python library:
    ```
